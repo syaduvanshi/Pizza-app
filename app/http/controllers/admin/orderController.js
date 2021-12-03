@@ -13,7 +13,7 @@ function orderController() {
                 return res.render('admin/orders')
                }
 
-               return res.render('admin/orders')
+            //    return res.render('admin/orders')
            })
         }
     }

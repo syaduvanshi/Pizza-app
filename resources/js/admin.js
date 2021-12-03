@@ -80,10 +80,11 @@ export function initAdmin(socket) {
         }).join('')
     }
     // Socket
+    
     socket.on('orderPlaced', (order) => {
         new Noty({
             type: 'success',
-            timeout: 1000,
+            timeout: 2000,
             text: 'New order!',
             progressBar: false,
         }).show();
