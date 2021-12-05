@@ -2,7 +2,7 @@ import axios from 'axios'
 import Noty from 'noty'
 import { initAdmin } from './admin'
 import moment from 'moment'
-// import { initStripe } from './stripe'
+import { initStripe } from './stripe'
 
 let addToCart = document.querySelectorAll('.add-to-cart')
 let cartCounter = document.querySelector('#cartCounter')
@@ -75,11 +75,10 @@ function updateStatus(order) {
 
 updateStatus(order);
 
-// initStripe()
+initStripe()
 
 // Socket
 let socket = io()
-initAdmin(socket)
 
 // Join
 if(order) {
